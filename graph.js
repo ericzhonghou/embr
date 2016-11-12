@@ -3,6 +3,12 @@ var svg1 = document.getElementById("dataGraph");
 var rect = svg1.getBoundingClientRect();
 console.log(rect.height);
 
+var modal = document.getElementById('myModal');
+var span = document.getElementsByClassName("close")[0];
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
 var svg = d3.select("svg"),
     margin = 10,
     diameter = rect.height,
@@ -31,10 +37,28 @@ d3.json("test.json", function(error, root) {
 
   var circle = g.selectAll("circle")
     .data(nodes)
-    .enter().append("circle")
+    .enter()
+  .filter(function(d){ return d.parent; })
+    .append("circle")
       .attr("class", function(d) { return d.parent ? d.children ? "node" : "node node--leaf" : "node node--root"; })
       .style("fill", function(d) { return d.children ? color(d.depth) : null; })
-      .on("click", function(d) { if (focus !== d) zoom(d), d3.event.stopPropagation(); });
+      .on("click", 
+        function(d) { 
+          if(d.depth >=2) {
+            modal.style.display = "block";
+            document.getElementById("sms").innerHTML = "";
+            for(i = 0; i < d.data.children[0].sms.length; i ++) {
+              document.getElementById("sms").innerHTML += d.data.children[0].sms[i].textmess + "<br/>";
+            }
+            d3.event.stopPropagation(); 
+         } else if (focus !== d) {
+            zoom(d);
+            d3.event.stopPropagation(); 
+         } else {
+            d3.event.stopPropagation();  
+        }
+        });
+
 
   var text = g.selectAll("text")
     .data(nodes)
@@ -42,6 +66,7 @@ d3.json("test.json", function(error, root) {
       .attr("class", "label")
       .style("fill-opacity", function(d) { return d.parent === root ? 1 : 0; })
       .style("display", function(d) { return d.parent === root ? "inline" : "none"; })
+      .style("font-size", function(d) { return "40px";})
       .text(function(d) { return d.data.name; });
 
   var node = g.selectAll("circle,text");

@@ -6,11 +6,49 @@
 			"size": 10,
 			"children" : [
 				{
-					"name" : "school" , "size" : 3
+					"name" : "school" , "size" : 3,
+					"children" : [
+						{
+							"size" : 1,
+							"sms" : [
+								{
+									"textmess" : "i like cats"
+								}, {
+									"textmess" : "i want to cure cancer"
+								} , {
+									"textmess" : "same"
+								}
+							]
+						}
+
+					]
 				},{
-					"name" : "school2" , "size" : 4
+					"name" : "school2" , "size" : 4, "children" : [
+						{
+							"size" : 6,
+							"sms" : [
+								{
+									"textmess" : "i like cats"
+								}
+							]
+						}
+
+					]
+
+					
 				},{
-					"name" : "school3" , "size" : 3
+					"name" : "school3" , "size" : 3, "children" : [
+						{
+							"size" : 2,
+							"sms" : [
+								{
+									"textmess" : "i like cats"
+								}
+							]
+						}
+
+					]
+
 				}
 
 			]
@@ -19,11 +57,44 @@
 			"name" : "legal", "size": 20,
 			"children" : [
 				{
-					"name" : "easdf" , "size" : 3
+					"name" : "easdf" , "size" : 3, "children" : [
+						{
+							"size" : 7,
+							"sms" : [
+								{
+									"textmess" : "i like cats"
+								}
+							]
+						}
+
+					]
+
 				},{
-					"name" : "scewfw2" , "size" : 4
+					"name" : "scewfw2" , "size" : 4, "children" : [
+						{
+							"size" : 2,
+							"sms" : [
+								{
+									"textmess" : "i like cats"
+								}
+							]
+						}
+
+					]
+
 				},{
-					"name" : "erfdgbl3" , "size" : 3
+					"name" : "erfdgbl3" , "size" : 3, "children" : [
+						{
+							"size" : 1,
+							"sms" : [
+								{
+									"textmess" : "i like cats"
+								}
+							]
+						}
+
+					]
+
 				}
 
 			]
@@ -45,11 +116,26 @@
 			"name" : "health", "size": 60,
 			"children" : [
 				{
-					"name" : "sciloyl" , "size" : 30
+					"name" : "sciloyl" , "size" : 30, 
+					"children" : [
+						{
+							"size" : 30
+						}
+					]
 				},{
-					"name" : "sch3r54ef2" , "size" : 40
+					"name" : "sch3r54ef2" , "size" : 40, 
+					"children" : [
+						{
+							"size" : 40
+						}
+					]
 				},{
-					"name" : "sctwerl3" , "size" : 30
+					"name" : "sctwerl3" , "size" : 30, 
+					"children" : [
+						{
+							"size" : 30
+						}
+					]
 				}
 
 			]
