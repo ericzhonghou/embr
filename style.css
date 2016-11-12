@@ -22,3 +22,9 @@
 .node--leaf {
   pointer-events: none;
 }
+
+#dataGraph {
+	margin-left:auto;
+	margin-right:auto; 
+	display:block;
+}
