@@ -1,7 +1,12 @@
+
+var svg1 = document.getElementById("dataGraph");
+var rect = svg1.getBoundingClientRect();
+console.log(rect.height);
+
 var svg = d3.select("svg"),
-    margin = 20,
-    diameter = +svg.attr("height"),
-    g = svg.append("g").attr("transform", "translate(" + diameter + "," + diameter / 2 + ")");
+    margin = 10,
+    diameter = rect.height,
+    g = svg.append("g").attr("transform", "translate(" + rect.width / 2+ "," + rect.height / 2 + ")");
 
 
 var color = d3.scaleLinear()

@@ -2,19 +2,70 @@
 	"name" : "stuff",
 	"children" : [
 		{
-			"name" : "education", "size": 10
+			"name" : "education", 
+			"size": 10,
+			"children" : [
+				{
+					"name" : "school" , "size" : 3
+				},{
+					"name" : "school2" , "size" : 4
+				},{
+					"name" : "school3" , "size" : 3
+				}
+
+			]
 		},
 		{
-			"name" : "legal", "size": 20
+			"name" : "legal", "size": 20,
+			"children" : [
+				{
+					"name" : "easdf" , "size" : 3
+				},{
+					"name" : "scewfw2" , "size" : 4
+				},{
+					"name" : "erfdgbl3" , "size" : 3
+				}
+
+			]
 		},
 		{
-			"name" : "finance", "size": 28
+			"name" : "finance", "size": 28,
+			"children" : [
+				{
+					"name" : "srefl" , "size" : 3
+				},{
+					"name" : "sch4l2" , "size" : 4
+				},{
+					"name" : "s34" , "size" : 3
+				}
+
+			]
 		},
 		{
-			"name" : "health", "size": 32
+			"name" : "health", "size": 60,
+			"children" : [
+				{
+					"name" : "sciloyl" , "size" : 30
+				},{
+					"name" : "sch3r54ef2" , "size" : 40
+				},{
+					"name" : "sctwerl3" , "size" : 30
+				}
+
+			]
 		}, 
 		{
-			"name" : "social", "size": 25
+			"name" : "social", "size": 25,
+			"children" : [
+				{
+					"name" : "scretol" , "size" : 3
+				},{
+					"name" : "s234ol2" , "size" : 4
+				},{
+					"name" : "schliol3" , "size" : 3
+				}
+
+			]
 		}
 	]
 }
