@@ -1,7 +1,7 @@
 var svg = d3.select("svg"),
     margin = 20,
-    diameter = +svg.attr("width"),
-    g = svg.append("g").attr("transform", "translate(" + diameter / 2 + "," + diameter / 2 + ")");
+    diameter = +svg.attr("height"),
+    g = svg.append("g").attr("transform", "translate(" + diameter + "," + diameter / 2 + ")");
 
 
 var color = d3.scaleLinear()
