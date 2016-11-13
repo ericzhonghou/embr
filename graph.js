@@ -12,7 +12,7 @@ span.onclick = function() {
 var svg = d3.select("svg"),
     margin = 10,
     diameter = rect.height,
-    g = svg.append("g").attr("transform", "translate(" + rect.width / 2+ "," + rect.height / 2 + ")");
+    g = svg.append("g").attr("transform", "translate(" + rect.width+ "," + rect.height / 2 + ")");
 
 
 var color = d3.scaleLinear()
