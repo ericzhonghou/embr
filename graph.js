@@ -1,7 +1,6 @@
 
 var svg1 = document.getElementById("dataGraph");
 var rect = svg1.getBoundingClientRect();
-console.log(rect.height);
 
 var modal = document.getElementById('myModal');
 var span = document.getElementsByClassName("close")[0];
